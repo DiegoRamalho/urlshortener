@@ -1,0 +1,33 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration is used for unit/integration tests.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+spring:
+    application:
+        name: shortener-url-test
+    jackson:
+        serialization.write_dates_as_timestamps: false
+    cache:
+        type: none
+    data:
+        mongodb:
+            host: localhost
+            port: 27017
+            database: shortener-url-test
+
+# ===================================================================
+# Application specific properties
+# ===================================================================
+application:
+    swagger:
+        default-include-pattern: /api/.*
+        title: URL Shortener API
+        description: API Documentation for short URL creation
+        version: 1.0.0

@@ -1,0 +1,26 @@
+version: '3'
+services:
+    urlshortener-app:
+        image: urlshortener
+        restart: always
+        environment:
+            - SPRING_DATA_MONGODB_HOST=urlshortener-mongodb
+            - SPRING_DATA_MONGODB_PORT=27017
+            #- SPRING_DATA_MONGODB_USERNAME=urlshortener-user
+            #- SPRING_DATA_MONGODB_PASSWORD=teste
+            - SPRING_DATA_MONGODB_DATABASE=urlshortener
+        ports:
+            - 8080:8080
+        networks:
+            - urlshortenernet
+    urlshortener-mongodb:
+        restart: always
+        image: mongo:3.2.10
+        ports:
+            - "27017:27017"
+        volumes:
+            - /opt/volumes/shortener/mongodb/:/data/db/
+        networks:
+            - urlshortenernet
+networks:
+    urlshortenernet:
