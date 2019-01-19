@@ -12,12 +12,12 @@ This is a Java 8 project for short URL creation and save it into mongodb databas
 
 ## Running with Maven
 
-To run using maven just run:
+To run using maven just execute the following command:
 
 
     mvn clean spring-boot:run
 
-The default configuration to the mongoDB is localhost:27017, if it are running at other host or port you can run the application using:
+The default configuration to the mongoDB is localhost:27017, if it is running at other host or port you can run the application using:
  
 
     mvn clean spring-boot:run -Dspring-boot.run.arguments=--spring.data.mongodb.host=<MONGODB_HOST>,--spring.data.mongodb.port=<MONGODB_PORT>
@@ -26,7 +26,7 @@ Or change the properties at application.yml file.
 
 ## Running with Docker
 
-To generate the image from docker via maven just run:
+To generate the image from docker by maven just run:
  
 
     mvn clean package docker:removeImage docker:build 
@@ -62,24 +62,24 @@ Spring Data JPA repositories.
 
 * By default, they should extend MongoRepository<Entity, IDClass>.
 
-* It should end with the expression Repository.
+* It must end with the expression Repository.
 
 #### rest
 REST Services Interfaces
 
 * Only DTOs should be exported.
 
-* It should end with the expression RestService.
+* It must end with the expression RestService.
 
 #### rest.dto
-Data Transfer Objects using to moving the database data to the client.
+Data Transfer Objects used to move the database data to the client.
 
 #### rest.impl
 REST Services Implementation
 
-* It should be annotated with @ RestController and @ RequestMapping ("/ api").
+* It must be annotated with @ RestController and @ RequestMapping ("/ api").
 
-* It should end with the expression RestServiceImpl.
+* It must end with the expression RestServiceImpl.
 
 #### rest.util
 Utility classes for generating REST services.
@@ -87,23 +87,23 @@ Utility classes for generating REST services.
 #### service
 Interface of the services present in the project.
 
-* It should end with the expression Service. 
+* It must end with the expression Service. 
 
 #### service.impl
 Concrete implementation of the services present in the project.
 
 * Manipulates DTOs and transforms them into the corresponding entity.
 
-* It should be annotated with @ Service.
+* It must be annotated with @ Service.
 
-* It should end with the expression ServiceImpl.
+* It must end with the expression ServiceImpl.
 
 #### service.mapper
-DTO converter interface for Entities.
+DTO converter interface for entities.
 
-* It should extends EntityMapper<DTO, Entity>.
+* It must extends EntityMapper<DTO, Entity>.
 
-* It should end with the expression Mapper.
+* It must end with the expression Mapper.
 
 ### main/resources
 Project Resources.
@@ -115,7 +115,7 @@ Spring configuration files.
 
 ### test/java
 #### rest e service
-Test for the REST webservice and Services project.
+Test for the REST webservice and services project.
 
 ### test/resources
 Configuration to execute the tests in this project.
