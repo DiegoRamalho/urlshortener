@@ -2,7 +2,7 @@
 
 This is a Java 8 project for short URL creation and save it into mongodb database. It uses:
 
-* [Spring Boot](https://spring.io/projects/spring-boot) and [Spring Data](https://spring.io/projects/spring-data)) 
+* [Spring Boot](https://spring.io/projects/spring-boot) and [Spring Data](https://spring.io/projects/spring-data) 
 
 * [Springfox](http://springfox.github.io/springfox/)
 
