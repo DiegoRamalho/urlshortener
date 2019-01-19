@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import ie.com.urlshortener.api.domain.StatisticsDto;
+import ie.com.urlshortener.api.rest.dto.StatisticsDto;
 import ie.com.urlshortener.api.rest.ShortenURLRestService;
 import ie.com.urlshortener.api.rest.dto.ShortURLDTO;
 import ie.com.urlshortener.api.rest.util.HeaderUtil;

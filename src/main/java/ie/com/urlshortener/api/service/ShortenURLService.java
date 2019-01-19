@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import ie.com.urlshortener.api.domain.StatisticsDto;
+import ie.com.urlshortener.api.rest.dto.StatisticsDto;
 import ie.com.urlshortener.api.rest.dto.ShortURLDTO;
 
 /**

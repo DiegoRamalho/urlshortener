@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
 import ie.com.urlshortener.api.domain.ShortURL;
-import ie.com.urlshortener.api.domain.StatisticsDto;
+import ie.com.urlshortener.api.rest.dto.StatisticsDto;
 
 
 /**

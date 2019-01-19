@@ -1,4 +1,4 @@
-package ie.com.urlshortener.api.domain;
+package ie.com.urlshortener.api.rest.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

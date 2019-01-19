@@ -18,7 +18,7 @@ import org.springframework.util.StringUtils;
 
 import ie.com.urlshortener.api.URLShortenerApplication;
 import ie.com.urlshortener.api.domain.ShortURL;
-import ie.com.urlshortener.api.domain.StatisticsDto;
+import ie.com.urlshortener.api.rest.dto.StatisticsDto;
 import ie.com.urlshortener.api.repository.ShortenURLRepository;
 import ie.com.urlshortener.api.rest.dto.ShortURLDTO;
 import ie.com.urlshortener.api.service.ShortenURLService;

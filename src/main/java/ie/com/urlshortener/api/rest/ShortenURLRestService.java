@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import ie.com.urlshortener.api.domain.StatisticsDto;
+import ie.com.urlshortener.api.rest.dto.StatisticsDto;
 import ie.com.urlshortener.api.rest.dto.ShortURLDTO;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
