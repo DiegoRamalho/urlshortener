@@ -26,17 +26,17 @@ Or change the properties at application.yml file.
 
 ## Running with Docker
 
-* To generate the image from docker via maven just run:
+To generate the image from docker via maven just run:
  
 
     mvn clean package docker:removeImage docker:build 
 	
-* To execute the application:
+To execute the application:
  
 
     docker-compose [-f src/main/docker/docker-compose.yml] down && docker-compose [-f src/main/docker/docker-compose.yml] up -d
 	
-* Viewing log:
+Viewing log:
  
 
     docker logs -f docker_urlshortener-app_1
