@@ -27,17 +27,17 @@ Or change the properties at application.yml file.
 ## Running with Docker
 
 * To generate the image from docker via maven just run:
-
+ 
 
     mvn clean package docker:removeImage docker:build 
 	
 * To execute the application:
-
+ 
 
     docker-compose [-f src/main/docker/docker-compose.yml] down && docker-compose [-f src/main/docker/docker-compose.yml] up -d
 	
 * Viewing log:
-
+ 
 
     docker logs -f docker_urlshortener-app_1
 
@@ -45,6 +45,7 @@ Or change the properties at application.yml file.
 ## See API methods
 
 To see the API methods, run the application and go to:
+ 
 
     http://localhost:8080/swagger-ui.html
 	
